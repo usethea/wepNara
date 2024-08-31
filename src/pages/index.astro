@@ -24,10 +24,13 @@ import Card from "../components/publik/Card.astro";
 	</section>
 	<ContentBlockwImage />
 	<section class="bg-white dark:bg-gray-900">
-		<div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 flex justify-center space-x-4">
-			<Card image="/images/img1.jpg" altText="image 1" />
-			<Card  image="/images/img2.jpg" altText="image 2" />
-			<Card  image="/images/img3.jpg" altText="image 3" />
+		<div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
+			<div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3">
+				<Card image="/images/img1.jpg" altText="image 1" />
+				<Card  image="/images/img2.jpg" altText="image 2" />
+				<Card  image="/images/img3.jpg" altText="image 3" />
+			</div>
+			
 		</div>
 	</section>
 	<Team />
