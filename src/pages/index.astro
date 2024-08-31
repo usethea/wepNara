@@ -1,16 +1,53 @@
 ---
-
+// src/pages/index.astro
+import Layout from "../components/publik/Layout.astro";
+import Hero from "../components/publik/Hero.astro";
+import Carousel from "../components/publik/Carousel.astro";
+import ContentBlockwImage from "../components/publik/ContentBlockwImage.astro";
+import Team from "../components/publik/Team.astro";
+import Card from "../components/publik/Card.astro";
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Perusahaan Pengolahan Buah Kelapa">
+	<Hero />
+	<section class="bg-white dark:bg-gray-900">
+		<div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+			<div class="max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
+				<h2 class="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Sadayana - <span class="font-extrabold">Keajaiban</span> Minyak Kelapa Murni</h2>
+				<p class="mb-4 font-light">Nikmati manfaat kesehatan dan kecantikan dari Sadayana, minyak kelapa murni yang diproses dengan teknologi terkini untuk menjaga kemurnian dan kualitasnya.</p>
+				<p class="mb-4 font-medium">kami berkomitmen untuk memberikan yang terbaik dari alam untuk kebutuhan Anda.</p>
+				<a href="#" class="inline-flex items-center font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700">
+					Learn more
+					<svg class="ml-1 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+				</a>
+			</div>
+		</div>
+	</section>
+	<ContentBlockwImage />
+	<section class="bg-white dark:bg-gray-900">
+		<div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 flex justify-center space-x-4">
+			<Card image="/images/img1.jpg" altText="image 1" />
+			<Card  image="/images/img2.jpg" altText="image 2" />
+			<Card  image="/images/img3.jpg" altText="image 3" />
+		</div>
+	</section>
+	<Team />
+	<section class="bg-white dark:bg-gray-900">
+		<div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+			<figure class="max-w-screen-md mx-auto">
+				<svg class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
+				</svg> 
+				<blockquote>
+					<p class="text-2xl font-medium text-gray-900 dark:text-white">"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."</p>
+				</blockquote>
+				<figcaption class="flex items-center justify-center mt-6 space-x-3">
+					<img class="w-6 h-6 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="profile picture">
+					<div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+						<div class="pr-3 font-medium text-gray-900 dark:text-white">Micheal Gough</div>
+						<div class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">CEO at Google</div>
+					</div>
+				</figcaption>
+			</figure>
+		</div>
+	  </section>
+  </Layout>

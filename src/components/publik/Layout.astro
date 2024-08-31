@@ -1,0 +1,22 @@
+---
+// src/components/Layout.astro
+import Header from './Header.astro';
+import Footer from './Footer.astro';
+const { title } = Astro.props;
+---
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title}</title>
+  
+</head>
+<body class="bg-gray-100">
+  <Header />
+  <main class="container mx-auto px-4 md:px-6 py-8">
+    <slot />
+  </main>
+  <Footer />
+  <script is:inline src="/js/flowbite.min.js"></script>
+</body>
+</html>
