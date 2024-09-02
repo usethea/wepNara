@@ -1,41 +1,15 @@
 ---
-// src/components/Hero.astro
-const product = {
-  title: 'SADAYANA - Virgin Coconut Oil',
-  description: 'Minyak kelapa murni berkualitas tinggi.',
-  image: '/path/to/image1.jpg'
-};
+import Carousel from "./Carousel.astro"
 ---
-<!-- <section class="bg-cover bg-center h-screen" style={`background-image: url(${product.image});`}>
-  <div class="flex items-center justify-center h-full bg-gray-900 bg-opacity-50 px-4">
-    <div class="text-center max-w-lg">
-      <h1 class="text-4xl md:text-5xl font-bold text-white">{product.title}</h1>
-      <p class="mt-4 text-lg md:text-xl text-gray-300">{product.description}</p>
-      <a href="#produk" class="mt-6 inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700">Lihat Produk Kami</a>
-    </div>
+
+<section class="bg-white text-black dark:from-gray-800 dark:to-gray-900">
+  <div class="container mx-auto flex flex-col items-center px-4 py-12 text-center">
+    <h1 class="text-4xl font-bold text-black">
+      Selamat Datang di PT. Nara Seungit Sadayana
+    </h1>
+    <p class="mt-4 text-lg text-black-200">
+      Mengolah Kelapa, Menghadirkan Kualitas
+    </p>
+    <Carousel />
   </div>
-</section> -->
-<section class="bg-green-200 dark:bg-gray-900">
-    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
-        
-        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Mengolah Kelapa, Menghadirkan Kualitas</h1>
-        <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">PT. Nara Seungit Sadayana, perusahaan yang berdedikasi dalam pengolahan kelapa berkualitas tinggi.</p>
-        <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-            <a href="/tentang" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
-                Tentang Kami
-            </a>  
-        </div>
-        <div class="px-4 mx-auto text-center md:max-w-screen-md lg:max-w-screen-lg lg:px-36">
-            <span class="font-semibold text-gray-400 uppercase">Produk Kami</span>
-            <div class="flex flex-wrap justify-center items-center mt-8 text-gray-500 sm:justify-between">
-                
-                <a href="/produk/sadayana" class="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400">
-                    <img src="/images/sadayana_logo_g.svg" alt="sadayana" width="300px">
-                </a>    
-                <a href="/produk/mikella" class="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400">
-                    <img src="/images/mikella_logo_g.svg" alt="mikella" width="300px">                      
-                </a>
-            </div>
-        </div> 
-    </div>
 </section>
