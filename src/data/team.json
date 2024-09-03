@@ -1,0 +1,17 @@
+[
+    {
+        "nama": "Risnara",
+        "gambar": "/images/henrisna.png",
+        "jabatan": "C.O.O"
+    },
+    {
+        "nama": "M Ikbal",
+        "gambar": "/images/miqbal.png",
+        "jabatan": "C.P.O"
+    },
+    {
+        "nama": "A Mukhlis",
+        "gambar": "/images/amukhlis.png",
+        "jabatan": "C.T.O"
+    }
+]
