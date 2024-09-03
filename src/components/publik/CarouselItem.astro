@@ -1,13 +1,39 @@
 ---
-const {gambar, judul, deskripsi, path} = Astro.props;
+const {gambar, judul, deskripsi, path, direction, logo, cta} = Astro.props;
 ---
 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-    <img src={gambar} class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt={judul}>
-    <div class="carousel-caption absolute text-center">
-        <h5 class="text-xl text-white">{judul}</h5>
-        <p class="text-gray-200">{deskripsi}</p>
-        <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
-            <a href={path} class="py-3 px-5 sm:ml-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Pelajari Lebih Lanjut</a>
+    <section class="px-3 py-5 bg-neutral-100 lg:py-10">
+        {direction === 'right' ? (
+            <div class="grid lg:grid-cols-2 items-center justify-items-center gap-2">
+                <div class="order-2 lg:order-1 flex flex-col justify-center items-center">
+                    
+                        <p class="text-2xl font-bold md:text-4xl text-orange-600 my-5"><img src={logo} width="250" alt={judul + " logo"}></p>
+                        <p class="text-2xl font-bold md:text-4xl">{judul}</p>
+                        <p class="mt-2 text-sm text-center md:text-lg lg:px-10">{deskripsi}</p>
+                        <a href={path} class="text-lg md:text-2xl bg-black text-white py-2 px-5 mt-10 hover:bg-zinc-800">{cta}</a>
+                    
+                    
+                </div>
+                <div class="order-1 lg:order-2">
+                    <img class="h-80 w-80 object-cover lg:w-[500px] lg:h-[500px]" src={gambar} alt={judul}>
+                </div>
+            </div>
+        ) : (
+        <div class="grid lg:grid-cols-2 items-center justify-items-center gap-2">
+            <div class="order-2 lg:order-2  flex flex-col justify-center items-center">
+                
+                    <p class="text-2xl font-bold md:text-4xl text-orange-600 my-5"><img src={logo} width="250px" alt={judul + " logo"}></p>
+                    <p class="text-2xl font-bold md:text-4xl">{judul}</p>
+                    <p class="mt-2 text-sm text-center md:text-lg lg:px-10">{deskripsi}</p>
+                    <a href={path} class="text-lg md:text-2xl bg-black text-white py-2 px-5 mt-10 hover:bg-zinc-800">{cta}</a>
+                
+                
+            </div>
+            <div class="order-1 lg:order-1">
+                <img class="h-80 w-80 object-cover lg:w-[500px] lg:h-[500px]" src={gambar} alt={judul}>
+            </div>
         </div>
-    </div>
+        )}
+        
+    </section>
 </div>
