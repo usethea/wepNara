@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "nama": "Sadayana",
+        "deskripsi": "",
+        "gambar": "/images/sadayana_logo_g.svg"
+    },
+    {
+        "id": 2,
+        "nama": "Mikella",
+        "deskripsi": "",
+        "gambar": "/images/mikella_logo_g.svg"
+    }
+]

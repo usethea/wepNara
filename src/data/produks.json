@@ -1,0 +1,104 @@
+[
+    {
+        "id": 1,
+        "brand_id": 1,
+        "kategori_id": 1,
+        "nama": "Virgin Coconut Oil",
+        "deskripsi": "<h1>Virgin Coconut Oil (VCO) Cold-Pressed</h1><p>Virgin Coconut Oil (VCO) Cold-Pressed adalah minyak kelapa murni yang dihasilkan dari daging kelapa segar melalui proses pemerasan dingin tanpa panas berlebih. Proses ini menjaga kandungan nutrisi dan aroma alami kelapa.</p><h2>Keunggulan VCO Cold-Pressed:</h2><ul><li><strong>Murni dan Alami:</strong> Tidak mengandung bahan kimia atau pengawet.</li><li><strong>Kaya Nutrisi:</strong> Mengandung asam laurat dan antioksidan yang baik untuk kesehatan.</li><li><strong>Aroma dan Rasa:</strong> Memiliki aroma dan rasa kelapa yang segar dan alami.</li></ul><h2>Manfaat Utama:</h2><ul><li><strong>Kesehatan Jantung:</strong> Membantu menurunkan kolesterol jahat.</li><li><strong>Kesehatan Kulit:</strong> Melembapkan dan menutrisi kulit secara alami.</li><li><strong>Energi Alami:</strong> Sumber energi cepat yang mudah dicerna tubuh.</li></ul><p>Dengan VCO Cold-Pressed, Anda mendapatkan manfaat maksimal dari kelapa dalam setiap tetesnya! 🌴✨</p>",
+        "gambar": "/images/produk_1.jpg",
+        "path": "/produk/sadayana",
+        "direction": "left",
+        "varian": [
+            {
+                "id": 1,
+                "nama": "60ml",
+                "gambar": "/images/produk1.jpg",
+                "online_shop": {
+                    "shopee": "/",
+                    "blibli": "/",
+                    "tokopedia": "/",
+                    "lazada":"/"
+                }
+            },
+            {
+                "id": 2,
+                "nama": "100ml",
+                "gambar": "/images/produk1.jpg",
+                "online_shop": {
+                    "shopee": "/",
+                    "blibli": "/",
+                    "tokopedia": "/",
+                    "lazada":"/"
+                }
+            },
+            {
+                "id": 3,
+                "nama": "250ml",
+                "gambar": "/images/produk1.jpg",
+                "online_shop": {
+                    "shopee": "/",
+                    "blibli": "/",
+                    "tokopedia": "/",
+                    "lazada":"/"
+                }
+            },
+            {
+                "id": 4,
+                "nama": "500ml",
+                "gambar": "/images/produk1.jpg",
+                "online_shop": {
+                    "shopee": "/",
+                    "blibli": "/",
+                    "tokopedia": "/",
+                    "lazada":"/"
+                }
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "brand_id": 1,
+        "kategori_id": 1,
+        "nama": "Extra Virgin Coconut Oil",
+        "deskripsi": "<h1>Virgin Coconut Oil (VCO) Cold-Pressed</h1><p>Virgin Coconut Oil (VCO) Cold-Pressed adalah minyak kelapa murni yang dihasilkan dari daging kelapa segar melalui proses pemerasan dingin tanpa panas berlebih. Proses ini menjaga kandungan nutrisi dan aroma alami kelapa.</p><h2>Keunggulan VCO Cold-Pressed:</h2><ul><li><strong>Murni dan Alami:</strong> Tidak mengandung bahan kimia atau pengawet.</li><li><strong>Kaya Nutrisi:</strong> Mengandung asam laurat dan antioksidan yang baik untuk kesehatan.</li><li><strong>Aroma dan Rasa:</strong> Memiliki aroma dan rasa kelapa yang segar dan alami.</li></ul><h2>Manfaat Utama:</h2><ul><li><strong>Kesehatan Jantung:</strong> Membantu menurunkan kolesterol jahat.</li><li><strong>Kesehatan Kulit:</strong> Melembapkan dan menutrisi kulit secara alami.</li><li><strong>Energi Alami:</strong> Sumber energi cepat yang mudah dicerna tubuh.</li></ul><p>Dengan VCO Cold-Pressed, Anda mendapatkan manfaat maksimal dari kelapa dalam setiap tetesnya! 🌴✨</p>",
+        "gambar": "/images/produk_1.jpg",
+        "path": "/produk/sadayana",
+        "direction": "right",
+        "varian": [
+            {
+                "id": 5,
+                "nama": "250ml",
+                "gambar": "/images/produk1.jpg",
+                "online_shop": {
+                    "shopee": "/",
+                    "blibli": "/",
+                    "tokopedia": "/",
+                    "lazada":"/"
+                }
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "brand_id": 2,
+        "kategori_id": 1,
+        "nama": "Leather Conditioner",
+        "deskripsi": "<h1>Mikella Natural Leather Conditioner</h1><p>Mikella Natural Leather Conditioner adalah solusi perawatan kulit alami yang dirancang untuk menjaga keindahan dan keawetan produk kulit Anda. Dibuat dengan bahan-bahan alami berkualitas tinggi, kondisioner ini memberikan perawatan maksimal tanpa bahan kimia berbahaya.</p><h2>Keunggulan Mikella Natural Leather Conditioner:</h2><ul><li><strong>Bahan Alami:</strong> Mengandung minyak alami dan lilin lebah yang melembapkan dan melindungi kulit.</li><li><strong>Perlindungan Optimal:</strong> Membantu mencegah retak dan kekeringan pada produk kulit.</li><li><strong>Aroma Menyegarkan:</strong> Diformulasikan dengan aroma alami yang menyegarkan tanpa pewangi buatan.</li></ul><h2>Manfaat Utama:</h2><ul><li><strong>Melembapkan:</strong> Menjaga kelembapan kulit agar tetap lembut dan lentur.</li><li><strong>Melindungi:</strong> Memberikan lapisan pelindung yang tahan lama terhadap elemen lingkungan.</li><li><strong>Mengembalikan Kilau Alami:</strong> Membantu mengembalikan kilau alami kulit yang kusam.</li></ul><p>Dengan Mikella Natural Leather Conditioner, Anda dapat memastikan produk kulit Anda tetap terlihat baru dan terawat dengan baik. 🌿✨</p>",
+        "gambar": "/images/produk_2.jpg",
+        "path": "/produk/mikella",
+        "direction": "left",
+        "varian": [
+            {
+                "id": 6,
+                "nama": "100gr",
+                "gambar": "/images/produk1.jpg",
+                "online_shop": {
+                    "shopee": "/",
+                    "blibli": "/",
+                    "tokopedia": "/",
+                    "lazada":"/"
+                }
+            }
+        ]
+    }
+]
