@@ -1,22 +1,21 @@
 ---
 // src/pages/produk.astro
+import type { ACTION_ERROR_CODES, ACTION_QUERY_PARAMS } from 'astro:actions';
 import Layout from '../../components/publik/Layout.astro';
-import ProductCard from '../../components/publik/ProductCard.astro';
+import ProdukCard1 from '../../components/publik/ProdukCard1.astro';
+import produks from "./../../data/produks.json";
 
-const products = [
-  { title: 'SADAYANA - Virgin Coconut Oil', description: 'Minyak kelapa murni berkualitas tinggi.' },
-  { title: 'Mikella - Leather Conditioner', description: 'Kondisioner kulit untuk perawatan optimal.' },
-  { title: 'Mikella - Furnitur WAX Polish', description: 'Polish furnitur untuk kilau sempurna.' },
-  { title: 'Mikella - Body Wax Kendaraan', description: 'Wax kendaraan untuk perlindungan maksimal.' },
-];
+// const products = [
+//   { title: 'SADAYANA - Virgin Coconut Oil', description: 'Minyak kelapa murni berkualitas tinggi.' },
+//   { title: 'Mikella - Leather Conditioner', description: 'Kondisioner kulit untuk perawatan optimal.' },
+//   { title: 'Mikella - Furnitur WAX Polish', description: 'Polish furnitur untuk kilau sempurna.' },
+//   { title: 'Mikella - Body Wax Kendaraan', description: 'Wax kendaraan untuk perlindungan maksimal.' },
+// ];
 ---
 <Layout title="Produk Kami">
-  <section id="produk" class="text-center">
-    <h2 class="text-2xl font-bold text-gray-800">Produk Kami</h2>
-    <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {products.map(product => (
-        <ProductCard title={product.title} description={product.description} />
+  
+      {produks.map(product => (
+        <ProdukCard1 {...product} />
       ))}
-    </div>
-  </section>
+
 </Layout>
