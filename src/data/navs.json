@@ -1,0 +1,45 @@
+[
+    {
+        "name": "Beranda",
+        "path": "/",
+        "isDropdown": false,
+        "subNav": []
+    },
+    {
+        "name": "Tentang Kami",
+        "path": "/tentang_kami",
+        "isDropdown": false,
+        "subNav": []
+    },
+    {
+        "name": "Produk Kami",
+        "path": "",
+        "isDropdown": true,
+        "subNav": [
+            {
+                "name": "Semua Produk",
+                "path": "/produk/semua_produk",
+                "isDropdown": false,
+                "subNav": []
+            },
+            {
+                "name": "Sadayana",
+                "path": "/produk/sadayana",
+                "isDropdown": false,
+                "subNav": []
+            },
+            {
+                "name": "Mikella",
+                "path": "/produk/mikella",
+                "isDropdown": false,
+                "subNav": []
+            }
+        ]
+    },
+    {
+        "name": "Kontak",
+        "path": "/kontak",
+        "isDropdown": false,
+        "subNav": []
+    }
+]

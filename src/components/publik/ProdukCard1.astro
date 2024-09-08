@@ -4,35 +4,37 @@ import brand from "../../data/brand.json"
 const {brand_id,path, gambar, nama, deskripsi, direction} = Astro.props;
 
 ---
-<section class="px-3 py-5 my-5 bg-white lg:py-10">
+
+<section>
     {direction === 'right' ? (
-            <div class="grid lg:grid-cols-2 items-center justify-items-center gap-2">
-                <div class="order-2 lg:order-1 flex flex-col justify-center items-center">
-                    
-                        <p class="text-2xl font-bold md:text-4xl text-orange-600 my-5"><img src={brand[brand_id - 1].gambar} width="250" alt={brand[brand_id - 1].nama + " logo"}></p>
-                        <p class="text-2xl font-bold md:text-4xl">{nama}</p>
-                        <p class="mt-2 text-sm text-center md:text-lg lg:px-10" set:html={deskripsi}></p>
-                        <a href={path} class="text-lg md:text-2xl bg-black text-white py-2 px-5 mt-10 hover:bg-zinc-800">Lihat Produk</a>
-                    
-                    
-                </div>
-                <div class="order-1 lg:order-2">
-                    <img class="h-80 w-80 object-cover lg:w-[500px] lg:h-[500px]" src={gambar} alt={nama}>
+        <div class="card lg:card-side bg-base-100 shadow-xl mb-5">
+            
+            <div class="card-body">
+                <p class="text-2xl font-bold md:text-4xl text-orange-600 my-5"><img src={brand[brand_id - 1].gambar} width="250" alt={brand[brand_id - 1].nama + " logo"}></p>
+                <h2 class="card-title">{nama}</h2>
+                <div set:html={deskripsi}></div>
+                <div class="card-actions justify-start">
+                    <a href={path} class="btn btn-primary">Lihat Produk</a>
                 </div>
             </div>
+            <figure>
+                <img class="object-cover"
+                    src={gambar} alt={nama} />      
+            </figure>
+        </div>
         ) : (
-        <div class="grid lg:grid-cols-2 items-center justify-items-center gap-2">
-            <div class="order-2 lg:order-2  flex flex-col justify-center items-center">
-                
-                    <p class="text-2xl font-bold md:text-4xl text-orange-600 my-5"><img src={brand[brand_id - 1].gambar} width="250px" alt={brand[brand_id - 1].nama + " logo"}></p>
-                    <p class="text-2xl font-bold md:text-4xl">{nama}</p>
-                    <p class="mt-2 text-sm text-center md:text-lg lg:px-10" set:html={deskripsi}></p>
-                    <a href={path} class="text-lg md:text-2xl bg-black text-white py-2 px-5 mt-10 hover:bg-zinc-800">Lihat Produk</a>
-                
-                
-            </div>
-            <div class="order-1 lg:order-1">
-                <img class="h-80 w-80 object-cover lg:w-[500px] lg:h-[500px]" src={gambar} alt={nama}>
+        <div class="card lg:card-side bg-base-100 shadow- mb-5">
+            <figure>
+                <img class="object-cover"
+                    src={gambar} alt={nama} />      
+            </figure>
+            <div class="card-body">
+                <p class="text-2xl font-bold md:text-4xl text-orange-600 my-5"><img src={brand[brand_id - 1].gambar} width="250" alt={brand[brand_id - 1].nama + " logo"}></p>
+                <h2 class="card-title">{nama}</h2>
+                <div set:html={deskripsi}></div>
+                <div class="card-actions justify-end">
+                    <a href={path} class="btn btn-primary">Lihat Produk</a>
+                </div>
             </div>
         </div>
         )}
