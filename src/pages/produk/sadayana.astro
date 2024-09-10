@@ -73,10 +73,12 @@ import Features from "../../components/publik/Features.astro";
 		<div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
 			<div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3">
                 <div class="card bg-base-100 w-96 shadow-xl">
-                    <figure>
-                      <img
-                        src="../../../images/produk_1.jpg"
-                        alt="Shoes" />
+                    <figure> 
+                        <img 
+                            src="../../../images/produk_1.jpg"
+                            alt="Shoes"
+                            class="hover:scale-105 transition-transform duration-300"
+                        />
                     </figure>
                     <div class="card-body">
                         <h2 class="card-title">Sadayana</h2>
@@ -87,10 +89,12 @@ import Features from "../../components/publik/Features.astro";
                     </div>
                 </div>
                 <div class="card bg-base-100 w-96 shadow-xl">
-                    <figure>
-                      <img
-                        src="../../../images/produk_1.jpg"
-                        alt="Shoes" />
+                    <figure> 
+                        <img 
+                            src="../../../images/produk_1.jpg"
+                            alt="Shoes"
+                            class="hover:scale-105 transition-transform duration-300"
+                        />
                     </figure>
                     <div class="card-body">
                         <h2 class="card-title">Sadayana</h2>
@@ -101,10 +105,12 @@ import Features from "../../components/publik/Features.astro";
                     </div>
                 </div>
                 <div class="card bg-base-100 w-96 shadow-xl">
-                    <figure>
-                      <img
-                        src="../../../images/produk_1.jpg"
-                        alt="Shoes" />
+                    <figure> 
+                        <img 
+                            src="../../../images/produk_1.jpg"
+                            alt="Shoes"
+                            class="hover:scale-105 transition-transform duration-300"
+                        />
                     </figure>
                     <div class="card-body">
                         <h2 class="card-title">Sadayana</h2>
@@ -119,3 +125,8 @@ import Features from "../../components/publik/Features.astro";
         
     </section>
 </Layout>
+<style>
+    .test:hover {
+        width: 200%;
+    }
+</style>
