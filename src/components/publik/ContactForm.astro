@@ -1,25 +1,181 @@
 ---
-// src/components/ContactForm.astro
+
+
+
+
 ---
-<section class="bg-white dark:bg-gray-900">
-  <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
-      <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
-      <form action="#" class="space-y-8">
-          <div>
-              <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
-              <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
+<section class="bg-gray-100">
+    <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+      <form method="post" action="/actions/send-email" class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
+        <div class="lg:col-span-2 lg:py-12">
+          <p class="max-w-xl text-lg">
+            Kami akan memberikan pelayanan pelanggan yang terbaik, pesan anda akan kami jawab paling lambat 1 x 24 jam, atau hubungi kami via whatsapp di nomer yang tertera di bawah ini
+          </p>
+  
+          <div class="mt-8">
+            <a href="#" class="text-2xl font-bold text-pink-600"> 0813814 </a>
+  
+            <address class="mt-2 not-italic">Jalan pangkalan Pasir kirainah, Tanjungsari Cijueruk, Kab. Bogor</address>
           </div>
-          <div>
-              <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
-              <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
-          </div>
-          <div class="sm:col-span-2">
-              <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
-              <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
-          </div>
-          <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+        </div>
+  
+        <div class="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
+          <form action="#" class="space-y-4">
+            <div>
+              <label class="sr-only" for="name">Nama</label>
+              <input
+                class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                placeholder="Nama"
+                type="text"
+                id="name"
+                name="name"
+              />
+            </div>
+  
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <div>
+                <label class="sr-only" for="email">Email</label>
+                <input
+                  class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                  placeholder="Email address"
+                  type="email"
+                  id="email"
+                  name="email"
+                />
+              </div>
+  
+              <div>
+                <label class="sr-only" for="phone">Telpon</label>
+                <input
+                  class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                  placeholder="Nomer Telpon"
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                />
+              </div>
+            </div>
+  
+            <div class="grid grid-cols-1 gap-4 text-center sm:grid-cols-3">
+              <div>
+                <label
+                  for="marketing"
+                  class="block w-full cursor-pointer rounded-lg border border-gray-200 p-3 text-gray-600 hover:border-black has-[:checked]:border-black has-[:checked]:bg-black has-[:checked]:text-white"
+                  tabindex="0"
+                >
+                  <input class="sr-only" id="marketing" type="radio" tabindex="-1" name="option" value="marketing" />
+  
+                  <span class="text-sm"> Marketing </span>
+                </label>
+              </div>
+  
+              <div>
+                <label
+                  for="produk"
+                  class="block w-full cursor-pointer rounded-lg border border-gray-200 p-3 text-gray-600 hover:border-black has-[:checked]:border-black has-[:checked]:bg-black has-[:checked]:text-white"
+                  tabindex="0"
+                >
+                  <input class="sr-only" id="produk" type="radio" tabindex="-1" name="option" value="produk"/>
+  
+                  <span class="text-sm"> Produk </span>
+                </label>
+              </div>
+  
+              <div>
+                <label
+                  for="lainnya"
+                  class="block w-full cursor-pointer rounded-lg border border-gray-200 p-3 text-gray-600 hover:border-black has-[:checked]:border-black has-[:checked]:bg-black has-[:checked]:text-white"
+                  tabindex="0"
+                >
+                  <input class="sr-only" id="lainnya" type="radio" tabindex="-1" name="option" value="lainnya" />
+  
+                  <span class="text-sm"> Lainnya </span>
+                </label>
+              </div>
+            </div>
+  
+            <div>
+              <label class="sr-only" for="message">Pesan</label>
+  
+              <textarea
+                class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                placeholder="Pesan"
+                rows="8"
+                id="message"
+                name="message"
+              ></textarea>
+            </div>
+  
+            <div class="mt-4">
+              <button
+                type="submit"
+                class="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto"
+              >
+                Kirim
+              </button>
+            </div>
+          </form>
+        </div>
       </form>
-  </div>
-</section>
+    </div>
+  </section>
+<!-- <section class="bg-white dark:bg-gray-900">
+    <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
+        <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
+        <form method="post" class="max-w-lg mx-auto p-6 bg-white shadow-md rounded-md">
+            <div class="mb-4">
+                <label for="name" class="block text-sm font-medium text-gray-700">Nama:</label>
+                <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                />
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-medium text-gray-700">Email:</label>
+                <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                />
+            </div>
+            <div class="mb-4">
+                <label for="phone" class="block text-sm font-medium text-gray-700">Nomor Telepon:</label>
+                <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                />
+            </div>
+            <div class="mb-4">
+                <label for="message" class="block text-sm font-medium text-gray-700">Keterangan:</label>
+                <textarea
+                id="message"
+                name="message"
+                required
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                ></textarea>
+            </div>
+            <button type="submit" class="w-full px-4 py-2 bg-indigo-600 text-white font-medium rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                Kirim
+            </button>
+        </form>
+    </div>
+</section> -->
+
+<!--
+  Heads up! 👋
+
+  Plugins:
+    - @tailwindcss/forms
+-->
+
+
   

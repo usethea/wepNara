@@ -13,8 +13,11 @@
     "@astrojs/check": "^0.9.3",
     "@astrojs/tailwind": "^5.1.0",
     "@supabase/supabase-js": "^2.45.3",
+    "@types/nodemailer": "^6.4.15",
     "astro": "^4.15.1",
     "flowbite": "^2.5.1",
+    "nodemailer": "^6.9.15",
+    "resend": "^4.0.0",
     "swiper": "^11.1.11",
     "tailwindcss": "^3.4.10",
     "typescript": "^5.5.4"
