@@ -1,6 +1,11 @@
 ---
 import Layout from "../../components/publik/Layout.astro";
 import Features from "../../components/publik/Features.astro";
+import Card from "../../components/publik/ProdukCard.astro";
+import produks from "../../data/produks.json";
+
+const vco = produks[0];
+//gambar, judul, konten, path, cta
 ---
 <Layout title="Sadayana">
     <section class="relative bg-gradient-to-br from-blue-900 to-indigo-800 text-white overflow-hidden">
@@ -72,61 +77,17 @@ import Features from "../../components/publik/Features.astro";
     <section class="bg-white dark:bg-gray-900">
 		<div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
 			<div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3">
-                <div class="card bg-base-100 w-96 shadow-xl">
-                    <figure> 
-                        <img 
-                            src="../../../images/produk_1.jpg"
-                            alt="Shoes"
-                            class="hover:scale-105 transition-transform duration-300"
-                        />
-                    </figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Sadayana</h2>
-                        <p>Minyak kelapa murni</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card bg-base-100 w-96 shadow-xl">
-                    <figure> 
-                        <img 
-                            src="../../../images/produk_1.jpg"
-                            alt="Shoes"
-                            class="hover:scale-105 transition-transform duration-300"
-                        />
-                    </figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Sadayana</h2>
-                        <p>Minyak kelapa murni</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card bg-base-100 w-96 shadow-xl">
-                    <figure> 
-                        <img 
-                            src="../../../images/produk_1.jpg"
-                            alt="Shoes"
-                            class="hover:scale-105 transition-transform duration-300"
-                        />
-                    </figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Sadayana</h2>
-                        <p>Minyak kelapa murni</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-    </section>
+				{vco.varian.map(b => (
+					<Card gambar={b.gambar} judul={b.nama} konten={b.deskripsi} path={b.online_shop.shopee} cta="Beli di Shopee" />
+				))}
+				
+			</div>
+			
+		</div>
+	</section>
 </Layout>
 <style>
-    .test:hover {
-        width: 200%;
+    .card-cta {
+        background: #EE4D2D !important;
     }
 </style>

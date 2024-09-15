@@ -2,27 +2,9 @@
 ---
 import type { ACTION_ERROR_CODES } from "astro:actions"
 import CarouselItem from "./CarouselItem.astro"
+import carousels from "./../../data/carousels.json"
 
-const carousels = [
-    {
-        judul: "Mikella Leather Conditioner",
-        deskripsi: "Mikella adalah kondisioner kulit yang dirancang khusus untuk merawat dan melindungi produk kulit Anda, memberikan kilau dan kelembutan yang tahan lama.",
-        gambar: "/images/produk_2.jpg",
-        cta: "Lihat Produk",
-        path: "/produk/mikella",
-        logo: "/images/mikella_logo_g.svg",
-        direction: "right"
-    },
-    {
-        judul: "Sadayana Virgin Coconut Oil",
-        deskripsi: "Nikmati manfaat kesehatan dan kecantikan dari Sadayana, minyak kelapa murni yang diproses dengan teknologi terkini untuk menjaga kemurnian dan kualitasnya.",
-        gambar: "/images/produk_1.jpg",
-        cta: "Lihat Produk",
-        path: "/produk/sadayana",
-        logo: "/images/sadayana_logo_g.svg",
-        direction: "left"
-    }
-]
+
 ---
 <div id="carousel" class="relative" data-carousel="slide" data-carousel-interval="10000">
     <div class="relative h-[62vh] overflow-hidden">
