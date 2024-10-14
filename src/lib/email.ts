@@ -32,14 +32,14 @@ export async function sendEmail(options: SendEmailOptions): Promise<Transporter>
 
 async function getEmailTransporter(): Promise<Transporter> {
   return new Promise((resolve, reject) => {
-    if (!import.meta.env.RESEND_API_KEY) {
+    if (!import.meta.env.RESEND_KEY) {
       throw new Error("Missing Resend configuration");
     }
     const transporter = createTransport({
       host: "smtp.resend.com",
       secure: true,
       port: 465,
-      auth: { user: "resend", pass: import.meta.env.RESEND_API_KEY },
+      auth: { user: "resend", pass: import.meta.env.RESEND_KEY },
     });
     resolve(transporter);
   });
